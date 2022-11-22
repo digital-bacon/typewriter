@@ -4,7 +4,7 @@ const typeWriter = (string, actionForEachCharacter, actionAfterTypeWriter, delay
     setTimeout(() => actionForEachCharacter(string[charIndex]), (timer += delay));
   }
   setTimeout(() => actionAfterTypeWriter(), timer);
-}
+};
 
 const doStdOut = (string) => process.stdout.write(string);
 
