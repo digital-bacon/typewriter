@@ -10,6 +10,7 @@
  * the terminal
  */
 const typeWriter = (string, actionForEachCharacter, actionAfterTypeWriter, delay = 25) => {
+  if (typeof string !== 'string') return;
   let timer = 0;
   for (const charIndex in string) {
     setTimeout(() => actionForEachCharacter(string[charIndex]), (timer += delay));
